@@ -1,10 +1,101 @@
 /* General Styles */
 /* Apply to all sizes */
+title{
+  display: none;
+}
 *, *:before, *:after {
   box-sizing: border-box;
 }
 
+ img{
+   height: 10%;
+   width: 10%;
+ }
 
+.fixed-top img{
+  height: 25%;
+  width: 25%;
+}
+
+*{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+
+.fixed-top{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  background-color: gray;
+  background-size: auto;
+
+}
+.fixed-top img{
+  margin-right: 200px;
+}
+.fixed-top nav{
+  margin-left: 300px;
+  display: flex;
+  flex-direction: row;
+}
+
+nav a{
+  margin-right: 20px;
+}
+
+
+.first-block{
+  margin-top: 100px;
+}
+
+
+
+.listings{
+  display: flex;
+  flex-direction: row;
+
+
+}
+.num1, .num2, .num3 {
+  border: 2px solid black;
+  margin-right: 20px;
+
+}
+
+.the-bottom{
+  display: flex;
+  flex-direction: row;
+
+}
+
+h4{
+  background-color: gray;
+}
+
+
+@media screen and (max-width: 960px) {
+  *{
+    width: auto;
+    height: auto;
+  }
+  .fixed-top{
+    display: flex;
+    flex-direction: column;
+  }
+  .listings{
+    display: flex;
+    flex-direction: column;
+  }
+  .fixed-top nav{
+    display: flex;
+    flex-direction: column;
+  }
+  .second-block img{
+    display: none;
+  }
+}
 /* Add Breakpoints Here */
 /* Apply to certain size and above */
-
