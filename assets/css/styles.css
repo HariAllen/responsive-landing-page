@@ -3,12 +3,13 @@
 
 
 title{
-  margin: 0;
-  padding: 0;
   display: none;
 }
+
 *, *:before, *:after {
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
  img{
@@ -33,7 +34,7 @@ title{
   position: fixed;
   display: flex;
   flex-direction: row;
-  background-color: gray;
+  background-color: white;
   background-size: auto;
 
 }
@@ -93,9 +94,13 @@ h4{
     flex-direction: column;
     flex-wrap: wrap;
   }
+  .fixed-top{
+
+  }
   .listings{
     display: flex;
     flex-direction: column;
+    margin-right: 0px;
   }
   .fixed-top nav{
     display: flex;
