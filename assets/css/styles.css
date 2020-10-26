@@ -1,6 +1,10 @@
 /* General Styles */
 /* Apply to all sizes */
+
+
 title{
+  margin: 0;
+  padding: 0;
   display: none;
 }
 *, *:before, *:after {
@@ -67,7 +71,9 @@ nav a{
 
 .the-bottom{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 
 }
 
@@ -81,9 +87,11 @@ h4{
     width: auto;
     height: auto;
   }
+
   .fixed-top{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
   .listings{
     display: flex;
